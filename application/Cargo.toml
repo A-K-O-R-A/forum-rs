@@ -1,0 +1,17 @@
+# application/Cargo.toml
+
+[package]
+name = "application"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+domain = { path = "../domain" }
+infrastructure = { path = "../infrastructure" }
+shared = { path = "../shared" }
+
+serde_json = { workspace = true }
+
+argon2 = "0.4.1"
+jsonwebtoken = { version = "8", default-features = false }
+rand_core = { version = "0.6", features = ["std"] }

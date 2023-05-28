@@ -1,0 +1,15 @@
+# api/Cargo.toml
+
+[package]
+name = "api"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+domain = { path = "../domain" }
+application = { path = "../application" }
+infrastructure = { path = "../infrastructure" }
+shared = { path = "../shared" }
+
+serde_json = { workspace = true }
+dotenvy = "0.15.6"

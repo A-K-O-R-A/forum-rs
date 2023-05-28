@@ -1,0 +1,11 @@
+# shared/Cargo.toml
+
+[package]
+name = "shared"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+domain = { path = "../domain" }
+
+serde = { workspace = true, features = ["derive"] }
